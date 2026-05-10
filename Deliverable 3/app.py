@@ -157,10 +157,10 @@ def inject_css():
         font-size: 0.85rem;
         font-weight: 600;
     }
-    .severity-mild { background: #E8F5E9; color: #2E7D32; }
+    .severity-mild     { background: #E8F5E9; color: #2E7D32; }
     .severity-moderate { background: #FFF3E0; color: #E65100; }
-    .severity-severe { background: #FCE4EC; color: #C62828; }
-    .severity-clear { background: #E3F2FD; color: #1565C0; }
+    .severity-severe   { background: #FCE4EC; color: #C62828; }
+    .severity-clear    { background: #E3F2FD; color: #1565C0; }
 
     .product-card {
         background: var(--card-bg);
@@ -222,9 +222,6 @@ def inject_css():
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-    }
-    .step-night .step-number {
-        background: linear-gradient(135deg, #5C5470, #352F44);
     }
 
     /* ── Upload Zone ── */
@@ -305,11 +302,6 @@ def inject_css():
         background: linear-gradient(160deg, #FAF8F5 0%, #F5EDE7 40%, #EEF3EC 100%);
         position: relative;
         overflow: hidden;
-    }
-    .hero-bg-circle {
-        position: absolute;
-        border-radius: 50%;
-        opacity: 0.08;
     }
 
     /* ── Pills ── */
@@ -425,7 +417,7 @@ def render_nav():
         <div class="nav-logo">Skin<span>Meta</span> AI</div>
         <div style="display:flex;gap:1rem;align-items:center">
             <span style="font-size:0.85rem;color:var(--muted);font-weight:500">Powered by XAI</span>
-            <span class="feature-pill">✦ Beta</span>
+            <span class="feature-pill">&#10022; Beta</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -437,20 +429,20 @@ def render_hero():
         st.markdown("""
         <div style="padding: 3rem 0 2rem 2rem;">
             <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.5rem;">
-                <span class="feature-pill">🔬 CNN Detection</span>
-                <span class="feature-pill">💡 Explainable AI</span>
-                <span class="feature-pill">🧴 Personalized</span>
+                <span class="feature-pill">&#128302; CNN Detection</span>
+                <span class="feature-pill">&#128161; Explainable AI</span>
+                <span class="feature-pill">&#129380; Personalized</span>
             </div>
             <div class="hero-title">Your skin,<br><span>decoded</span><br>by AI.</div>
             <div style="font-size:1.1rem;color:var(--muted);font-weight:300;margin:1.5rem 0 2rem;line-height:1.7;max-width:480px;">
                 Upload a photo, answer a few questions. SkinMeta AI analyzes your skin using deep learning and maps real skincare products to your unique needs.
             </div>
             <div style="display:flex;gap:0.5rem;align-items:center;font-size:0.82rem;color:var(--muted);">
-                <span>✓ Acne classification</span>
-                <span style="margin:0 0.5rem">·</span>
-                <span>✓ Ingredient matching</span>
-                <span style="margin:0 0.5rem">·</span>
-                <span>✓ Product filtering</span>
+                <span>&#10003; Acne classification</span>
+                <span style="margin:0 0.5rem">&#183;</span>
+                <span>&#10003; Ingredient matching</span>
+                <span style="margin:0 0.5rem">&#183;</span>
+                <span>&#10003; Product filtering</span>
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -460,28 +452,28 @@ def render_hero():
         <div style="padding:2rem;display:flex;flex-direction:column;align-items:center;gap:1rem;">
             <div style="background:linear-gradient(135deg,#F9F0EB,#EEF3EC);border-radius:24px;padding:2.5rem;width:100%;box-shadow:var(--shadow-lg);border:1px solid var(--border);">
                 <div style="text-align:center;margin-bottom:1.5rem;">
-                    <div style="font-size:3.5rem;margin-bottom:0.5rem;">✨</div>
+                    <div style="font-size:3.5rem;margin-bottom:0.5rem;">&#10024;</div>
                     <div style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--deep);font-weight:600;">Skin Analysis Ready</div>
                     <div style="font-size:0.85rem;color:var(--muted);">Upload your image below to begin</div>
                 </div>
                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;">
                     <div style="background:white;border-radius:12px;padding:1rem;text-align:center;box-shadow:var(--shadow-sm);">
-                        <div style="font-size:1.4rem;margin-bottom:0.3rem;">🎯</div>
+                        <div style="font-size:1.4rem;margin-bottom:0.3rem;">&#127919;</div>
                         <div style="font-size:0.75rem;font-weight:600;color:var(--deep);">4 Acne Types</div>
                         <div style="font-size:0.7rem;color:var(--muted);">Detected</div>
                     </div>
                     <div style="background:white;border-radius:12px;padding:1rem;text-align:center;box-shadow:var(--shadow-sm);">
-                        <div style="font-size:1.4rem;margin-bottom:0.3rem;">🌿</div>
+                        <div style="font-size:1.4rem;margin-bottom:0.3rem;">&#127807;</div>
                         <div style="font-size:0.75rem;font-weight:600;color:var(--deep);">20+ Ingredients</div>
                         <div style="font-size:0.7rem;color:var(--muted);">Analyzed</div>
                     </div>
                     <div style="background:white;border-radius:12px;padding:1rem;text-align:center;box-shadow:var(--shadow-sm);">
-                        <div style="font-size:1.4rem;margin-bottom:0.3rem;">🛡️</div>
+                        <div style="font-size:1.4rem;margin-bottom:0.3rem;">&#128737;</div>
                         <div style="font-size:0.75rem;font-weight:600;color:var(--deep);">Smart Filter</div>
                         <div style="font-size:0.7rem;color:var(--muted);">Products only</div>
                     </div>
                     <div style="background:white;border-radius:12px;padding:1rem;text-align:center;box-shadow:var(--shadow-sm);">
-                        <div style="font-size:1.4rem;margin-bottom:0.3rem;">💬</div>
+                        <div style="font-size:1.4rem;margin-bottom:0.3rem;">&#128172;</div>
                         <div style="font-size:0.75rem;font-weight:600;color:var(--deep);">Explained AI</div>
                         <div style="font-size:0.7rem;color:var(--muted);">Why it works</div>
                     </div>
@@ -503,86 +495,93 @@ def render_analysis_section():
     st.markdown("""
     <div style="text-align:center;padding:2rem 0 1rem;">
         <div class="section-title">Analyze Your Skin</div>
-        <div class="section-subtitle">Upload a clear, well-lit photo of your face · No filters or makeup</div>
+        <div class="section-subtitle">Upload a clear, well-lit photo of your face &middot; No filters or makeup</div>
     </div>
     """, unsafe_allow_html=True)
 
-    # Two column layout
     col_input, col_profile = st.columns([1, 1], gap="large")
 
     with col_input:
-        st.markdown('<div class="card">', unsafe_allow_html=True)
-        st.markdown("**📸 Upload Skin Image**")
-        st.markdown('<div style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem;">JPG, PNG or JPEG · Max 10MB · Clear, well-lit selfie</div>', unsafe_allow_html=True)
-
-        uploaded_file = st.file_uploader(
-            "Upload skin image",
-            type=["jpg", "jpeg", "png"],
-            label_visibility="collapsed",
-            key="skin_image"
-        )
-
-        if uploaded_file:
-            image = Image.open(uploaded_file).convert("RGB")
-            st.image(image, caption="Uploaded Image", use_container_width=True)
-            st.markdown('<div class="transparency-box">✅ Image loaded successfully. Ready for analysis.</div>', unsafe_allow_html=True)
-
-        st.markdown('</div>', unsafe_allow_html=True)
+        # FIX: card open/close must both be in same render call — use st.container
+        with st.container():
+            st.markdown('<div class="card">', unsafe_allow_html=True)
+            st.markdown("**&#128248; Upload Skin Image**")
+            st.markdown(
+                '<div style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem;">'
+                'JPG, PNG or JPEG &middot; Max 10MB &middot; Clear, well-lit selfie</div>',
+                unsafe_allow_html=True
+            )
+            uploaded_file = st.file_uploader(
+                "Upload skin image",
+                type=["jpg", "jpeg", "png"],
+                label_visibility="collapsed",
+                key="skin_image"
+            )
+            if uploaded_file:
+                image = Image.open(uploaded_file).convert("RGB")
+                st.image(image, caption="Uploaded Image", use_container_width=True)
+                st.markdown(
+                    '<div class="transparency-box">&#9989; Image loaded successfully. Ready for analysis.</div>',
+                    unsafe_allow_html=True
+                )
+            st.markdown('</div>', unsafe_allow_html=True)
 
     with col_profile:
-        st.markdown('<div class="card">', unsafe_allow_html=True)
-        st.markdown("**👤 Skin Profile Questionnaire**")
-        st.markdown('<div style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem;">Used for rule-based refinement only</div>', unsafe_allow_html=True)
-
-        skin_type = st.selectbox(
-            "Skin Type",
-            ["Normal", "Oily", "Dry", "Combination", "Sensitive"],
-            key="skin_type"
-        )
-        sensitivity = st.selectbox(
-            "Sensitivity Level",
-            ["Low", "Moderate", "High"],
-            key="sensitivity"
-        )
-        age_group = st.selectbox(
-            "Age Group",
-            ["14-18", "19-24", "25-34", "35-44", "45+"],
-            key="age_group"
-        )
-        climate = st.selectbox(
-            "Climate",
-            ["Temperate", "Tropical / Humid", "Dry / Arid", "Cold"],
-            key="climate"
-        )
-        concerns = st.multiselect(
-            "Skin Concerns",
-            ["Acne", "Blackheads", "Dark Spots", "Oiliness", "Dryness",
-             "Redness", "Enlarged Pores", "Uneven Texture"],
-            default=["Acne"],
-            key="concerns"
-        )
-
-        st.markdown("""
-        <div class="transparency-box">
-            💡 <strong>Transparency Note:</strong> Ingredient recommendations are primarily generated 
-            using CNN acne-type prediction. Questionnaire answers apply rule-based refinement 
-            (e.g. sensitive skin → no harsh exfoliants). The ML model does not directly learn 
-            from climate or age group inputs.
-        </div>
-        """, unsafe_allow_html=True)
-
-        st.markdown('</div>', unsafe_allow_html=True)
+        with st.container():
+            st.markdown('<div class="card">', unsafe_allow_html=True)
+            st.markdown("**&#128100; Skin Profile Questionnaire**")
+            st.markdown(
+                '<div style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem;">'
+                'Used for rule-based refinement only</div>',
+                unsafe_allow_html=True
+            )
+            skin_type = st.selectbox(
+                "Skin Type",
+                ["Normal", "Oily", "Dry", "Combination", "Sensitive"],
+                key="skin_type"
+            )
+            sensitivity = st.selectbox(
+                "Sensitivity Level",
+                ["Low", "Moderate", "High"],
+                key="sensitivity"
+            )
+            age_group = st.selectbox(
+                "Age Group",
+                ["14-18", "19-24", "25-34", "35-44", "45+"],
+                key="age_group"
+            )
+            climate = st.selectbox(
+                "Climate",
+                ["Temperate", "Tropical / Humid", "Dry / Arid", "Cold"],
+                key="climate"
+            )
+            concerns = st.multiselect(
+                "Skin Concerns",
+                ["Acne", "Blackheads", "Dark Spots", "Oiliness", "Dryness",
+                 "Redness", "Enlarged Pores", "Uneven Texture"],
+                default=["Acne"],
+                key="concerns"
+            )
+            st.markdown("""
+            <div class="transparency-box">
+                &#128161; <strong>Transparency Note:</strong> Ingredient recommendations are primarily generated
+                using CNN acne-type prediction. Questionnaire answers apply rule-based refinement
+                (e.g. sensitive skin &rarr; no harsh exfoliants). The ML model does not directly learn
+                from climate or age group inputs.
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown('</div>', unsafe_allow_html=True)
 
     # Analyze button
     st.markdown('<div style="text-align:center;margin:2rem 0;">', unsafe_allow_html=True)
-    analyze_clicked = st.button("✨ Analyze My Skin", key="analyze_btn", use_container_width=False)
+    analyze_clicked = st.button("&#10024; Analyze My Skin", key="analyze_btn", use_container_width=False)
     st.markdown('</div>', unsafe_allow_html=True)
 
     # Disclaimer
     st.markdown("""
     <div class="disclaimer-box">
-        ⚠️ <strong>Medical Disclaimer:</strong> SkinMeta AI is an educational tool and does not 
-        provide medical advice. Consult a dermatologist for persistent or severe skin conditions. 
+        &#9888;&#65039; <strong>Medical Disclaimer:</strong> SkinMeta AI is an educational tool and does not
+        provide medical advice. Consult a dermatologist for persistent or severe skin conditions.
         Results are based on AI predictions and may not always be accurate.
     </div>
     """, unsafe_allow_html=True)
@@ -591,7 +590,7 @@ def render_analysis_section():
 
     if analyze_clicked:
         if not uploaded_file:
-            st.error("⚠️ Please upload a skin image first.")
+            st.error("Please upload a skin image first.")
             return
 
         profile = {
@@ -603,7 +602,7 @@ def render_analysis_section():
         }
 
         try:
-            with st.spinner("🔬 Analyzing your skin..."):
+            with st.spinner("Analyzing your skin..."):
                 time.sleep(0.8)
                 cnn = CNNModel()
                 rec_engine = RecommendationEngine()
@@ -635,48 +634,75 @@ def render_analysis_section():
             st.session_state["uploaded_image"] = image
 
             st.rerun()
+
         except ValueError as ve:
             err_msg = str(ve)
             if "NOT_SKIN" in err_msg:
                 friendly = err_msg.replace("NOT_SKIN: ", "")
                 st.error(
-                    "🚫 **This doesn't look like a skin photo.**\n\n"
+                    "This doesn't look like a skin photo.\n\n"
                     + friendly
                     + "\n\nPlease upload a clear, well-lit photo of your face or affected skin area."
                 )
             else:
-                st.error(f"❌ Validation failed: {friendly if 'friendly' in locals() else err_msg}")
+                st.error(f"Validation failed: {err_msg}")
         except Exception as e:
-            st.error(f"❌ Analysis failed: {str(e)}")
+            st.error(f"Analysis failed: {str(e)}")
 
+
+def _get_severity_class(severity: str) -> str:
+    """Return CSS class for severity badge. Handles any casing."""
+    s = severity.lower().strip()
+    if s in ("mild", "low"):
+        return "severity-mild"
+    if s in ("moderate", "medium"):
+        return "severity-moderate"
+    if s in ("severe", "high"):
+        return "severity-severe"
+    if s in ("clear", "none"):
+        return "severity-clear"
+    return "severity-mild"
+
+
+def _severity_icon(severity: str) -> str:
+    s = severity.lower().strip()
+    if s in ("severe", "high"):
+        return "&#128308;"   # red circle
+    if s in ("moderate", "medium"):
+        return "&#128993;"   # yellow circle
+    if s in ("clear", "none"):
+        return "&#128994;"   # green circle
+    return "&#128994;"       # default green (mild)
 
 
 def render_results():
-    cnn_result = st.session_state.get("cnn_result", {})
-    rec_result = st.session_state.get("rec_result", {})
-    products = st.session_state.get("products", [])
-    profile = st.session_state.get("profile", {})
-    uploaded_image = st.session_state.get("uploaded_image")
+    cnn_result      = st.session_state.get("cnn_result", {})
+    rec_result      = st.session_state.get("rec_result", {})
+    products        = st.session_state.get("products", [])
+    profile         = st.session_state.get("profile", {})
+    uploaded_image  = st.session_state.get("uploaded_image")
 
-    acne_type = cnn_result.get("acne_type", "Unknown")
-    severity = cnn_result.get("severity", "Mild")
-    confidence = cnn_result.get("confidence", 0.82)
-    all_probs = cnn_result.get("probabilities", {})
-    severity_level = cnn_result.get("severity_level", 1)
+    acne_type     = cnn_result.get("acne_type", "Unknown")
+    severity      = cnn_result.get("severity", "Mild")
+    confidence    = cnn_result.get("confidence", 0.82)
+    all_probs     = cnn_result.get("probabilities", {})
+
+    sev_class = _get_severity_class(severity)
+    sev_icon  = _severity_icon(severity)
 
     st.markdown('<div class="content-wrapper">', unsafe_allow_html=True)
 
-    st.markdown(f"""
-    <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;">
-        <div class="section-title">Analysis Results</div>
-        <span class="severity-badge severity-{severity.lower().replace(' ','-')}">
-            {"🟢" if severity == "Mild" else "🟡" if severity == "Moderate" else "🔴"} {severity}
-        </span>
-    </div>
-    """, unsafe_allow_html=True)
+    # ── Header ────────────────────────────────────────────────────────────────
+    st.markdown(
+        f'<div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;">'
+        f'<div class="section-title">Analysis Results</div>'
+        f'<span class="severity-badge {sev_class}">{sev_icon} {severity}</span>'
+        f'</div>',
+        unsafe_allow_html=True
+    )
 
     st.markdown("---")
-    st.markdown("### 🔬 Skin Analysis")
+    st.markdown("### &#128302; Skin Analysis")
 
     col_img, col_cnn = st.columns([0.45, 0.55], gap="large")
 
@@ -685,90 +711,104 @@ def render_results():
             st.image(uploaded_image, caption="Your Image", use_container_width=True)
 
     with col_cnn:
-        st.markdown('<div class="result-card">', unsafe_allow_html=True)
-        st.markdown(f"""
-        <div style="margin-bottom:1.2rem;">
-            <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.3rem;">Detected Condition</div>
-            <div style="font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--deep);font-weight:600;">{acne_type}</div>
-        </div>
-        """, unsafe_allow_html=True)
-
         conf_pct = int(confidence * 100)
-        st.markdown(f"""
-        <div style="margin-bottom:1.2rem;">
-            <div style="display:flex;justify-content:space-between;margin-bottom:0.3rem;">
-                <span style="font-size:0.82rem;color:var(--muted);">Model Confidence</span>
-                <span style="font-size:0.82rem;font-weight:600;color:var(--terracotta);">{conf_pct}%</span>
-            </div>
-            <div class="confidence-bar">
-                <div class="confidence-fill" style="width:{conf_pct}%;"></div>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
 
-        st.markdown('<div style="margin-bottom:0.8rem;font-size:0.82rem;color:var(--muted);font-weight:500;">All Class Probabilities</div>', unsafe_allow_html=True)
+        # Build probability rows as a single string to avoid repeated markdown calls
+        prob_rows_html = ""
         for cls, prob in sorted(all_probs.items(), key=lambda x: -x[1]):
             prob_pct = int(prob * 100)
-            st.markdown(f"""
-            <div style="margin-bottom:0.5rem;">
-                <div style="display:flex;justify-content:space-between;margin-bottom:0.2rem;">
-                    <span style="font-size:0.8rem;color:var(--deep);">{cls}</span>
-                    <span style="font-size:0.8rem;color:var(--muted);">{prob_pct}%</span>
-                </div>
-                <div class="confidence-bar">
-                    <div style="height:4px;width:{prob_pct}%;background:{'#C4785A' if cls==acne_type else '#C8D8C4'};border-radius:3px;"></div>
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
+            bar_color = "#C4785A" if cls == acne_type else "#C8D8C4"
+            prob_rows_html += (
+                f'<div style="margin-bottom:0.5rem;">'
+                f'<div style="display:flex;justify-content:space-between;margin-bottom:0.2rem;">'
+                f'<span style="font-size:0.8rem;color:var(--deep);">{cls}</span>'
+                f'<span style="font-size:0.8rem;color:var(--muted);">{prob_pct}%</span>'
+                f'</div>'
+                f'<div class="confidence-bar">'
+                f'<div style="height:4px;width:{prob_pct}%;background:{bar_color};border-radius:3px;"></div>'
+                f'</div>'
+                f'</div>'
+            )
 
-        st.markdown('</div>', unsafe_allow_html=True)
+        st.markdown(
+            f'<div class="result-card">'
+            f'<div style="margin-bottom:1.2rem;">'
+            f'<div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.3rem;">Detected Condition</div>'
+            f'<div style="font-family:\'Playfair Display\',serif;font-size:1.8rem;color:var(--deep);font-weight:600;">{acne_type}</div>'
+            f'</div>'
+            f'<div style="margin-bottom:1.2rem;">'
+            f'<div style="display:flex;justify-content:space-between;margin-bottom:0.3rem;">'
+            f'<span style="font-size:0.82rem;color:var(--muted);">Model Confidence</span>'
+            f'<span style="font-size:0.82rem;font-weight:600;color:var(--terracotta);">{conf_pct}%</span>'
+            f'</div>'
+            f'<div class="confidence-bar"><div class="confidence-fill" style="width:{conf_pct}%;"></div></div>'
+            f'</div>'
+            f'<div style="margin-bottom:0.8rem;font-size:0.82rem;color:var(--muted);font-weight:500;">All Class Probabilities</div>'
+            f'{prob_rows_html}'
+            f'</div>',
+            unsafe_allow_html=True
+        )
 
+    # ── Ingredients ───────────────────────────────────────────────────────────
     st.markdown("---")
-    st.markdown("### 🌿 Recommended Ingredients")
+    st.markdown("### &#127807; Recommended Ingredients")
     st.markdown("""
     <div class="transparency-box">
-        🤖 Ingredients are recommended based on <strong>CNN acne-type prediction</strong> 
-        and refined using rule-based skin profile logic. 
+        &#129302; Ingredients are recommended based on <strong>CNN acne-type prediction</strong>
+        and refined using rule-based skin profile logic.
         Questionnaire answers adjust concentration and exclude conflicting actives.
     </div>
     """, unsafe_allow_html=True)
 
-    ingredients = rec_result.get("ingredients_by_category", {})
-    formula_parts = rec_result.get("formula_parts", [])
-    adjustments = rec_result.get("adjustments", [])
+    ingredients  = rec_result.get("ingredients_by_category", {})
+    adjustments  = rec_result.get("adjustments", [])
 
     if ingredients:
         ing_cols = st.columns(min(len(ingredients), 3))
         for i, (category, ing_list) in enumerate(ingredients.items()):
             with ing_cols[i % len(ing_cols)]:
-                st.markdown(f"""
-                <div class="card" style="min-height:160px;">
-                    <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:0.7rem;">{category}</div>
-                """, unsafe_allow_html=True)
-                for ing in ing_list:
-                    st.markdown(f'<span class="ingredient-tag">{ing["name"]}</span>', unsafe_allow_html=True)
-                if ing_list:
-                    st.markdown(f'<div class="product-why" style="margin-top:0.8rem;">{ing_list[0].get("benefit","")}</div>', unsafe_allow_html=True)
-                st.markdown('</div>', unsafe_allow_html=True)
+                tags_html = "".join(
+                    [f'<span class="ingredient-tag">{ing["name"]}</span>' for ing in ing_list]
+                )
+                benefit_html = (
+                    f'<div class="product-why" style="margin-top:0.8rem;">{ing_list[0].get("benefit","")}</div>'
+                    if ing_list else ""
+                )
+                st.markdown(
+                    f'<div class="card" style="min-height:160px;">'
+                    f'<div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:0.7rem;">{category}</div>'
+                    f'{tags_html}'
+                    f'{benefit_html}'
+                    f'</div>',
+                    unsafe_allow_html=True
+                )
 
     if adjustments:
         st.markdown("**Profile Adjustments Applied:**")
         for adj in adjustments:
-            st.markdown(f'<div class="card-sm">⚙️ {adj}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="card-sm">&#9881;&#65039; {adj}</div>', unsafe_allow_html=True)
 
+    # ── Products ──────────────────────────────────────────────────────────────
     st.markdown("---")
-    st.markdown("### 🛍️ Recommended Products")
-    
+    st.markdown("### &#128717;&#65039; Recommended Products")
+
     explanation = rec_result.get("explanation", "")
     if explanation:
-        st.markdown(f'<div class="transparency-box">🤖 <strong>Why these products?</strong><br/>{explanation}</div>', unsafe_allow_html=True)
+        st.markdown(
+            f'<div class="transparency-box">&#129302; <strong>Why these products?</strong><br/>{explanation}</div>',
+            unsafe_allow_html=True
+        )
 
     if not products:
         st.info("No matching facial skincare products found. Try a different skin type or upload another image.")
     else:
-        st.markdown(f'<div style="font-size:0.85rem;color:var(--muted);margin-bottom:1rem;">Showing {len(products)} facial skincare products · Filtered for acne-prone skin</div>', unsafe_allow_html=True)
+        st.markdown(
+            f'<div style="font-size:0.85rem;color:var(--muted);margin-bottom:1rem;">'
+            f'Showing {len(products)} facial skincare products &middot; Filtered for acne-prone skin</div>',
+            unsafe_allow_html=True
+        )
 
-        cat_groups = {}
+        cat_groups: dict = {}
         for p in products:
             cat = p.get("category", "Treatment")
             cat_groups.setdefault(cat, []).append(p)
@@ -779,111 +819,123 @@ def render_results():
             for j, prod in enumerate(cat_products[:3]):
                 with prod_cols[j]:
                     score_pct = int(prod.get("match_score", 0.7) * 100)
-                    key_ings = prod.get("key_ingredients", [])[:3]
-                    ing_tags = "".join([f'<span class="ingredient-tag">{i}</span>' for i in key_ings])
-                    why = prod.get("why_recommended", "Suitable for acne-prone skin.")
+                    key_ings  = prod.get("key_ingredients", [])[:3]
+                    ing_tags  = "".join(
+                        [f'<span class="ingredient-tag">{ing}</span>' for ing in key_ings]
+                    )
+                    why   = prod.get("why_recommended", "Suitable for acne-prone skin.")
                     usage = prod.get("usage", "Apply as directed.")
 
-                    st.markdown(f"""
-                    <div class="product-card">
-                        <div class="product-brand">{prod.get('brand', 'Brand')}</div>
-                        <div class="product-name">{prod.get('name', 'Product Name')}</div>
-                        <div style="margin-bottom:0.8rem;">{ing_tags}</div>
-                        <div style="margin-bottom:0.5rem;">
-                            <div style="display:flex;justify-content:space-between;margin-bottom:0.2rem;">
-                                <span style="font-size:0.75rem;color:var(--muted);">Match</span>
-                                <span style="font-size:0.75rem;font-weight:600;color:var(--terracotta);">{score_pct}%</span>
-                            </div>
-                            <div class="confidence-bar"><div class="confidence-fill" style="width:{score_pct}%;"></div></div>
-                        </div>
-                        <div class="product-why">{why}</div>
-                        <div style="font-size:0.75rem;color:var(--muted);margin-top:0.6rem;padding-top:0.6rem;border-top:1px solid var(--border);">💡 {usage}</div>
-                    </div>
-                    """, unsafe_allow_html=True)
+                    st.markdown(
+                        f'<div class="product-card">'
+                        f'<div class="product-brand">{prod.get("brand", "Brand")}</div>'
+                        f'<div class="product-name">{prod.get("name", "Product Name")}</div>'
+                        f'<div style="margin-bottom:0.8rem;">{ing_tags}</div>'
+                        f'<div style="margin-bottom:0.5rem;">'
+                        f'<div style="display:flex;justify-content:space-between;margin-bottom:0.2rem;">'
+                        f'<span style="font-size:0.75rem;color:var(--muted);">Match</span>'
+                        f'<span style="font-size:0.75rem;font-weight:600;color:var(--terracotta);">{score_pct}%</span>'
+                        f'</div>'
+                        f'<div class="confidence-bar"><div class="confidence-fill" style="width:{score_pct}%;"></div></div>'
+                        f'</div>'
+                        f'<div class="product-why">{why}</div>'
+                        f'<div style="font-size:0.75rem;color:var(--muted);margin-top:0.6rem;padding-top:0.6rem;border-top:1px solid var(--border);">&#128161; {usage}</div>'
+                        f'</div>',
+                        unsafe_allow_html=True
+                    )
 
+    # ── Routine ───────────────────────────────────────────────────────────────
     st.markdown("---")
-    st.markdown("### 📅 Personalized Routine")
+    st.markdown("### &#128197; Personalized Routine")
 
-    routine = rec_result.get("routine", {})
+    routine    = rec_result.get("routine", {})
     am_routine = routine.get("am", [])
     pm_routine = routine.get("pm", [])
-    notes = routine.get("notes", [])
+    notes      = routine.get("notes", [])
 
-    tab_am, tab_pm = st.tabs(["☀️ Morning (AM)", "🌙 Night (PM)"])
+    tab_am, tab_pm = st.tabs(["&#9728;&#65039; Morning (AM)", "&#127769; Night (PM)"])
+
+    def _step_products_hint(step_name: str, products_list: list) -> str:
+        """Return a formatted hint string of matching products for a routine step."""
+        sn = step_name.lower()
+        matched = []
+        for prod in products_list:
+            cat = prod.get("category", "").lower()
+            if (
+                ("cleanser" in sn and any(x in cat for x in ["cleanser", "wash"])) or
+                ("toner"    in sn and any(x in cat for x in ["toner", "essence"])) or
+                ("treatment" in sn and any(x in cat for x in ["serum", "treatment"])) or
+                ("moisturizer" in sn and any(x in cat for x in ["moisturizer", "cream", "lotion"])) or
+                ("spf"     in sn and any(x in cat for x in ["sunscreen", "spf"])) or
+                ("repair"  in sn and any(x in cat for x in ["moisturizer", "cream", "lotion"]))
+            ):
+                matched.append(prod)
+        if not matched:
+            return ""
+        # FIX: build product label outside f-string to avoid nested quote issues
+        labels = ", ".join(
+            ["{} {}".format(p.get("brand", ""), p.get("name", "")).strip() for p in matched[:2]]
+        )
+        return (
+            '<div style="font-size:0.75rem;color:var(--terracotta);font-weight:600;margin-top:0.5rem;">'
+            '&#10024; Try: {}</div>'.format(labels)
+        )
 
     with tab_am:
         if am_routine:
-            for i, step in enumerate(am_routine):
-                actives = ", ".join(step.get("actives", [])[:2]) or "—"
-                st.markdown(f"""
-                <div class="routine-step">
-                    <div class="step-number">{step['step']}</div>
-                    <div>
-                        <div style="font-weight:600;color:var(--deep);margin-bottom:0.2rem;">{step['name']}</div>
-                        <div style="font-size:0.82rem;color:var(--muted);">{step['description']}</div>
-                        <div style="margin-top:0.4rem;">{f'<span class="ingredient-tag">{actives}</span>' if actives != "—" else ""}</div>
-                    </div>
-                </div>
-                """, unsafe_allow_html=True)
-                
-                # Show matching products for this step
-                step_name = step.get("name", "").lower()
-                step_products = []
-                for prod in products:
-                    cat = prod.get("category", "").lower()
-                    if ("cleanser" in step_name and any(x in cat for x in ["cleanser", "wash"])) or \
-                       ("toner" in step_name and any(x in cat for x in ["toner", "essence"])) or \
-                       ("treatment" in step_name and any(x in cat for x in ["serum", "treatment"])) or \
-                       ("moisturizer" in step_name and any(x in cat for x in ["moisturizer", "cream", "lotion"])) or \
-                       ("spf" in step_name and any(x in cat for x in ["sunscreen", "spf"])):
-                        step_products.append(prod)
-                
-                if step_products:
-                    st.markdown(f'<div style="font-size:0.75rem;color:var(--terracotta);font-weight:600;margin-top:0.5rem;">✨ Try: {", ".join([f"{p.get("brand")} {p.get("name")}" for p in step_products[:2]])}</div>', unsafe_allow_html=True)
+            for step in am_routine:
+                actives     = ", ".join(step.get("actives", [])[:2]) or "&#8212;"
+                tag_html    = f'<span class="ingredient-tag">{actives}</span>' if actives != "&#8212;" else ""
+                hint_html   = _step_products_hint(step.get("name", ""), products)
+                st.markdown(
+                    f'<div class="routine-step">'
+                    f'<div class="step-number">{step["step"]}</div>'
+                    f'<div style="flex:1;">'
+                    f'<div style="font-weight:600;color:var(--deep);margin-bottom:0.2rem;">{step["name"]}</div>'
+                    f'<div style="font-size:0.82rem;color:var(--muted);">{step["description"]}</div>'
+                    f'<div style="margin-top:0.4rem;">{tag_html}</div>'
+                    f'{hint_html}'
+                    f'</div>'
+                    f'</div>',
+                    unsafe_allow_html=True
+                )
         else:
             st.info("Morning routine will appear after analysis.")
 
     with tab_pm:
         if pm_routine:
             for step in pm_routine:
-                actives = ", ".join(step.get("actives", [])[:2]) or "—"
-                st.markdown(f"""
-                <div class="routine-step">
-                    <div class="step-number" style="background: linear-gradient(135deg, #5C5470, #352F44);">{step['step']}</div>
-                    <div>
-                        <div style="font-weight:600;color:var(--deep);margin-bottom:0.2rem;">{step['name']}</div>
-                        <div style="font-size:0.82rem;color:var(--muted);">{step['description']}</div>
-                        <div style="margin-top:0.4rem;">{f'<span class="ingredient-tag">{actives}</span>' if actives != "—" else ""}</div>
-                    </div>
-                </div>
-                """, unsafe_allow_html=True)
-                
-                # Show matching products for this step
-                step_name = step.get("name", "").lower()
-                step_products = []
-                for prod in products:
-                    cat = prod.get("category", "").lower()
-                    if ("cleanser" in step_name and any(x in cat for x in ["cleanser", "wash"])) or \
-                       ("toner" in step_name and any(x in cat for x in ["toner", "essence"])) or \
-                       ("treatment" in step_name and any(x in cat for x in ["serum", "treatment"])) or \
-                       ("moisturizer" in step_name and any(x in cat for x in ["moisturizer", "cream", "lotion"])) or \
-                       ("repair" in step_name and any(x in cat for x in ["moisturizer", "cream", "lotion"])):
-                        step_products.append(prod)
-                
-                if step_products:
-                    st.markdown(f'<div style="font-size:0.75rem;color:var(--terracotta);font-weight:600;margin-top:0.5rem;">✨ Try: {", ".join([f"{p.get("brand")} {p.get("name")}" for p in step_products[:2]])}</div>', unsafe_allow_html=True)
+                actives   = ", ".join(step.get("actives", [])[:2]) or "&#8212;"
+                tag_html  = f'<span class="ingredient-tag">{actives}</span>' if actives != "&#8212;" else ""
+                hint_html = _step_products_hint(step.get("name", ""), products)
+                st.markdown(
+                    f'<div class="routine-step">'
+                    f'<div class="step-number" style="background:linear-gradient(135deg,#5C5470,#352F44);">{step["step"]}</div>'
+                    f'<div style="flex:1;">'
+                    f'<div style="font-weight:600;color:var(--deep);margin-bottom:0.2rem;">{step["name"]}</div>'
+                    f'<div style="font-size:0.82rem;color:var(--muted);">{step["description"]}</div>'
+                    f'<div style="margin-top:0.4rem;">{tag_html}</div>'
+                    f'{hint_html}'
+                    f'</div>'
+                    f'</div>',
+                    unsafe_allow_html=True
+                )
         else:
             st.info("Night routine will appear after analysis.")
 
     if notes:
         for note in notes:
-            st.markdown(f'<div class="disclaimer-box" style="margin-top:0.8rem;">💡 {note}</div>', unsafe_allow_html=True)
+            st.markdown(
+                f'<div class="disclaimer-box" style="margin-top:0.8rem;">&#128161; {note}</div>',
+                unsafe_allow_html=True
+            )
 
+    # ── Reset ─────────────────────────────────────────────────────────────────
     st.markdown("---")
     col_reset, _ = st.columns([1, 3])
     with col_reset:
         st.markdown('<div class="btn-secondary">', unsafe_allow_html=True)
-        if st.button("↺ New Analysis", key="reset_btn"):
+        if st.button("&#8635; New Analysis", key="reset_btn"):
             for key in ["analysis_done", "cnn_result", "rec_result", "products", "profile", "uploaded_image"]:
                 st.session_state.pop(key, None)
             st.rerun()
@@ -895,7 +947,7 @@ def render_results():
 def render_footer():
     st.markdown("""
     <div style="background:var(--deep);color:rgba(255,255,255,0.6);padding:3rem 2rem;margin-top:4rem;">
-        <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;flex-wrap:wrap;">
+        <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;">
             <div>
                 <div style="font-family:'Playfair Display',serif;font-size:1.3rem;color:white;margin-bottom:0.8rem;">SkinMeta AI</div>
                 <div style="font-size:0.82rem;line-height:1.6;">AI-powered acne analysis and personalized skincare recommendations using explainable machine learning.</div>
@@ -910,7 +962,7 @@ def render_footer():
             </div>
         </div>
         <div style="max-width:1200px;margin:2rem auto 0;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.78rem;text-align:center;">
-            © 2025 SkinMeta AI · Built with Streamlit & TensorFlow · Educational Use Only
+            &copy; 2025 SkinMeta AI &middot; Built with Streamlit &amp; TensorFlow &middot; Educational Use Only
         </div>
     </div>
     """, unsafe_allow_html=True)
