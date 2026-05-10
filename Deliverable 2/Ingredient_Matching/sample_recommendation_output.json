@@ -1,0 +1,56 @@
+{
+  "acne_type": "Comedonal",
+  "severity": 1,
+  "formula": "Zinc PCA(2.5%) + Salicylic Acid(2%) + Niacinamide(5%)",
+  "products": [
+    {
+      "product_name": "La Roche-Posay Effaclar H Hydrating Cleansing Cream (200ml)",
+      "brand": "Unknown",
+      "product_type": "Cleanser",
+      "similarity_score": 0.8905,
+      "acne_types": [
+        "Comedonal",
+        "Inflammatory",
+        "Fungal",
+        "Pigmentation"
+      ],
+      "key_ingredients": [
+        "niacinamide",
+        "zinc pca"
+      ]
+    },
+    {
+      "product_name": "La Roche-Posay Effaclar K(+) Anti-Blackhead Moisturiser 40ml",
+      "brand": "Unknown",
+      "product_type": "Moisturiser",
+      "similarity_score": 0.8688,
+      "acne_types": [
+        "Comedonal",
+        "Fungal"
+      ],
+      "key_ingredients": [
+        "salicylic acid",
+        "zinc pca"
+      ]
+    },
+    {
+      "product_name": "La Roche-Posay Effaclar MAT+ 40ml",
+      "brand": "Unknown",
+      "product_type": "Moisturiser",
+      "similarity_score": 0.8688,
+      "acne_types": [
+        "Comedonal",
+        "Fungal"
+      ],
+      "key_ingredients": [
+        "salicylic acid",
+        "zinc pca"
+      ]
+    }
+  ],
+  "shap_values": {
+    "salicylic acid": 0.24940924024613254,
+    "zinc pca": 0.12824698002339133,
+    "niacinamide": 0.033594532523677105
+  }
+}

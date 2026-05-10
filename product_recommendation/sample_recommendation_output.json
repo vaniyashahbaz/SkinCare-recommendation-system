@@ -1,0 +1,55 @@
+{
+  "acne_type": "Comedonal",
+  "severity": 1,
+  "formula": "Zinc PCA(2.5%) + Benzoyl Peroxide(2%) + Salicylic Acid(1%)",
+  "products": [
+    {
+      "product_name": "La Roche-Posay Effaclar K(+) Anti-Blackhead Moisturiser 40ml",
+      "brand": "Unknown",
+      "product_type": "Moisturiser",
+      "price": 17.0,
+      "match_score": 0.333,
+      "matched_ingredients": [
+        "zinc pca (~)",
+        "salicylic acid (~)"
+      ],
+      "all_acne_types": [
+        "Comedonal",
+        "Fungal"
+      ],
+      "acne_ingredient_count": 2
+    },
+    {
+      "product_name": "La Roche-Posay Effaclar MAT+ 40ml",
+      "brand": "Unknown",
+      "product_type": "Moisturiser",
+      "price": 17.0,
+      "match_score": 0.333,
+      "matched_ingredients": [
+        "zinc pca (~)",
+        "salicylic acid (~)"
+      ],
+      "all_acne_types": [
+        "Comedonal",
+        "Fungal"
+      ],
+      "acne_ingredient_count": 2
+    },
+    {
+      "product_name": "Garnier Pure Active Anti Blemish Soap Free Gel Wash Sensitive Skin 150ml",
+      "brand": "Unknown",
+      "product_type": "Cleanser",
+      "price": 4.99,
+      "match_score": 0.333,
+      "matched_ingredients": [
+        "zinc pca (~)",
+        "salicylic acid (~)"
+      ],
+      "all_acne_types": [
+        "Comedonal",
+        "Fungal"
+      ],
+      "acne_ingredient_count": 2
+    }
+  ]
+}

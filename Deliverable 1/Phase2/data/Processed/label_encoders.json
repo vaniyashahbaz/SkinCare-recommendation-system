@@ -1,0 +1,196 @@
+{
+  "skin_type": {
+    "classes": [
+      "Combination",
+      "Dry",
+      "Normal",
+      "Oily",
+      "Sensitive"
+    ],
+    "mapping": {
+      "Combination": 0,
+      "Dry": 1,
+      "Normal": 2,
+      "Oily": 3,
+      "Sensitive": 4
+    }
+  },
+  "acne_type": {
+    "classes": [
+      "Blackheads",
+      "Cyst",
+      "Papules",
+      "Pustules",
+      "Whiteheads"
+    ],
+    "mapping": {
+      "Blackheads": 0,
+      "Cyst": 1,
+      "Papules": 2,
+      "Pustules": 3,
+      "Whiteheads": 4
+    }
+  },
+  "acne_severity": {
+    "classes": [
+      "Mild",
+      "Moderate",
+      "Severe"
+    ],
+    "mapping": {
+      "Mild": 0,
+      "Moderate": 1,
+      "Severe": 2
+    }
+  },
+  "breakout_location": {
+    "classes": [
+      "All over face",
+      "Cheeks and jawline",
+      "Jawline and chin",
+      "T-Zone (forehead/nose)"
+    ],
+    "mapping": {
+      "All over face": 0,
+      "Cheeks and jawline": 1,
+      "Jawline and chin": 2,
+      "T-Zone (forehead/nose)": 3
+    }
+  },
+  "product_sensitivity": {
+    "classes": [
+      "Often reacts",
+      "Rarely reacts",
+      "Sometimes reacts"
+    ],
+    "mapping": {
+      "Often reacts": 0,
+      "Rarely reacts": 1,
+      "Sometimes reacts": 2
+    }
+  },
+  "allergen": {
+    "classes": [
+      "Alcohol",
+      "Fragrance",
+      "None",
+      "Parabens",
+      "Sulfates"
+    ],
+    "mapping": {
+      "Alcohol": 0,
+      "Fragrance": 1,
+      "None": 2,
+      "Parabens": 3,
+      "Sulfates": 4
+    }
+  },
+  "skin_concern": {
+    "classes": [
+      "Acne and breakouts",
+      "Anti-aging",
+      "Dark spots/Uneven tone",
+      "Dryness or flakiness",
+      "Large pores",
+      "Oily/Shiny skin"
+    ],
+    "mapping": {
+      "Acne and breakouts": 0,
+      "Anti-aging": 1,
+      "Dark spots/Uneven tone": 2,
+      "Dryness or flakiness": 3,
+      "Large pores": 4,
+      "Oily/Shiny skin": 5
+    }
+  },
+  "humidity": {
+    "classes": [
+      "High",
+      "Low",
+      "Medium"
+    ],
+    "mapping": {
+      "High": 0,
+      "Low": 1,
+      "Medium": 2
+    }
+  },
+  "pollution": {
+    "classes": [
+      "High",
+      "Low",
+      "Medium"
+    ],
+    "mapping": {
+      "High": 0,
+      "Low": 1,
+      "Medium": 2
+    }
+  },
+  "temperature": {
+    "classes": [
+      "Cold",
+      "Hot",
+      "Moderate"
+    ],
+    "mapping": {
+      "Cold": 0,
+      "Hot": 1,
+      "Moderate": 2
+    }
+  },
+  "age_group": {
+    "classes": [
+      "13-17",
+      "18-24",
+      "25-34",
+      "35-44",
+      "45+"
+    ],
+    "mapping": {
+      "13-17": 0,
+      "18-24": 1,
+      "25-34": 2,
+      "35-44": 3,
+      "45+": 4
+    }
+  },
+  "hormonal_phase": {
+    "classes": [
+      "Follicular",
+      "Luteal",
+      "Menstrual",
+      "None",
+      "Ovulation"
+    ],
+    "mapping": {
+      "Follicular": 0,
+      "Luteal": 1,
+      "Menstrual": 2,
+      "None": 3,
+      "Ovulation": 4
+    }
+  },
+  "recommended_treatment": {
+    "classes": [
+      "BHA Exfoliant",
+      "Benzoyl Peroxide Treatment",
+      "Gentle Hydrating Cleanser",
+      "Niacinamide Serum",
+      "Oil Control Moisturizer",
+      "Retinoid Treatment",
+      "Salicylic Acid Cleanser",
+      "Soothing Cleanser"
+    ],
+    "mapping": {
+      "BHA Exfoliant": 0,
+      "Benzoyl Peroxide Treatment": 1,
+      "Gentle Hydrating Cleanser": 2,
+      "Niacinamide Serum": 3,
+      "Oil Control Moisturizer": 4,
+      "Retinoid Treatment": 5,
+      "Salicylic Acid Cleanser": 6,
+      "Soothing Cleanser": 7
+    }
+  }
+}

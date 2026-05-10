@@ -1,0 +1,6 @@
+Class,N samples,Accuracy,Precision,Recall,F1
+Blackheads,186,0.86,0.952,0.86,0.904
+Cyst,156,0.923,0.787,0.923,0.85
+Papules,155,0.768,0.895,0.768,0.826
+Pustules,151,0.861,0.872,0.861,0.867
+Whiteheads,45,1.0,0.75,1.0,0.857

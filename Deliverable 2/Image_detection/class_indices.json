@@ -1,0 +1,7 @@
+{
+  "Blackheads": 0,
+  "Cyst": 1,
+  "Papules": 2,
+  "Pustules": 3,
+  "Whiteheads": 4
+}

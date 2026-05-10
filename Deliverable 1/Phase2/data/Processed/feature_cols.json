@@ -1,0 +1,14 @@
+[
+  "skin_type_enc",
+  "acne_type_enc",
+  "acne_severity_enc",
+  "breakout_location_enc",
+  "product_sensitivity_enc",
+  "allergen_enc",
+  "skin_concern_enc",
+  "humidity_enc",
+  "pollution_enc",
+  "temperature_enc",
+  "age_group_enc",
+  "hormonal_phase_enc"
+]

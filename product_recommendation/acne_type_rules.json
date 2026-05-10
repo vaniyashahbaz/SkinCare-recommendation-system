@@ -1,0 +1,39 @@
+{
+  "Comedonal": [
+    "salicylic acid",
+    "zinc pca",
+    "glycolic acid",
+    "lactic acid"
+  ],
+  "Inflammatory": [
+    "benzoyl peroxide",
+    "niacinamide",
+    "azelaic acid",
+    "tea tree"
+  ],
+  "Cystic": [
+    "benzoyl peroxide",
+    "azelaic acid",
+    "retinol",
+    "adapalene"
+  ],
+  "Fungal": [
+    "zinc pca",
+    "zinc gluconate",
+    "azelaic acid",
+    "sulfur"
+  ],
+  "Pigmentation": [
+    "niacinamide",
+    "vitamin c",
+    "ascorbic acid",
+    "kojic acid",
+    "alpha arbutin",
+    "tranexamic acid"
+  ],
+  "Dark Circles": [
+    "caffeine",
+    "vitamin c",
+    "hyaluronic acid"
+  ]
+}
