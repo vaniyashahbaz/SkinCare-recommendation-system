@@ -2,8 +2,6 @@ streamlit
 numpy
 pandas
 scikit-learn
-tensorflow
-opencv-python
 matplotlib
 joblib
 Pillow
